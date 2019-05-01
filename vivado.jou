@@ -1,0 +1,31 @@
+#-----------------------------------------------------------
+# Vivado v2015.4 (64-bit)
+# SW Build 1412921 on Wed Nov 18 09:43:45 MST 2015
+# IP Build 1412160 on Tue Nov 17 13:47:24 MST 2015
+# Start of session at: Wed May 01 14:55:09 2019
+# Process ID: 11176
+# Current directory: C:/Users/alejandroe/Desktop/project update/project_1
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent13976 C:\Users\alejandroe\Desktop\project update\project_1\project_1.xpr
+# Log file: C:/Users/alejandroe/Desktop/project update/project_1/vivado.log
+# Journal file: C:/Users/alejandroe/Desktop/project update/project_1\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/alejandroe/Desktop/project update/project_1/project_1.xpr}
+launch_simulation
+source benchtest.tcl
+close_sim
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+source benchtest.tcl
+synth_design -rtl -name rtl_1
+close_sim
+launch_simulation
+source benchtest.tcl

@@ -1,0 +1,481 @@
+#-----------------------------------------------------------
+# Vivado v2015.4 (64-bit)
+# SW Build 1412921 on Wed Nov 18 09:43:45 MST 2015
+# IP Build 1412160 on Tue Nov 17 13:47:24 MST 2015
+# Start of session at: Mon Apr 29 15:47:30 2019
+# Process ID: 15016
+# Current directory: C:/Users/alejandroe/Desktop/project_1/project_1/project_1.runs/impl_1
+# Command line: vivado.exe -log top.vdi -applog -messageDb vivado.pb -mode batch -source top.tcl -notrace
+# Log file: C:/Users/alejandroe/Desktop/project_1/project_1/project_1.runs/impl_1/top.vdi
+# Journal file: C:/Users/alejandroe/Desktop/project_1/project_1/project_1.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source top.tcl -notrace
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+INFO: [Netlist 29-17] Analyzing 78 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2015.4
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [C:/Users/alejandroe/Downloads/Nexys4DDR_Master.xdc]
+WARNING: [Vivado 12-584] No ports matched 'BTNC'. [C:/Users/alejandroe/Downloads/Nexys4DDR_Master.xdc:84]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/alejandroe/Downloads/Nexys4DDR_Master.xdc:84]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [C:/Users/alejandroe/Downloads/Nexys4DDR_Master.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Command: opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a100t'
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Project 1-461] DRC finished with 0 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.150 . Memory (MB): peak = 469.324 ; gain = 3.676
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+
+Starting Logic Optimization Task
+Implement Debug Cores | Checksum: c1892445
+
+Phase 1 Retarget
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Opt 31-49] Retargeted 0 cell(s).
+Phase 1 Retarget | Checksum: c1892445
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.038 . Memory (MB): peak = 957.715 ; gain = 0.000
+
+Phase 2 Constant Propagation
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Opt 31-10] Eliminated 0 cells.
+Phase 2 Constant Propagation | Checksum: c1892445
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.067 . Memory (MB): peak = 957.715 ; gain = 0.000
+
+Phase 3 Sweep
+INFO: [Opt 31-12] Eliminated 193 unconnected nets.
+INFO: [Opt 31-11] Eliminated 0 unconnected cells.
+Phase 3 Sweep | Checksum: 196cc9285
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.123 . Memory (MB): peak = 957.715 ; gain = 0.000
+
+Starting Connectivity Check Task
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 957.715 ; gain = 0.000
+Ending Logic Optimization Task | Checksum: 196cc9285
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.129 . Memory (MB): peak = 957.715 ; gain = 0.000
+
+Starting Power Optimization Task
+INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 2.00 ns.
+INFO: [Pwropt 34-9] Applying IDT optimizations ...
+INFO: [Pwropt 34-10] Applying ODC optimizations ...
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+WARNING: [Power 33-232] No user defined clocks were found in the design!
+Resolution: Please specify clocks using create_clock/create_generated_clock for sequential elements. For pure combinatorial circuits, please specify a virtual clock, otherwise the vectorless estimation might be inaccurate
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+
+
+Starting PowerOpt Patch Enables Task
+INFO: [Pwropt 34-162] WRITE_MODE attribute of 0 BRAM(s) out of a total of 2 has been updated to save power. Run report_power_opt to get a complete listing of the BRAMs updated.
+INFO: [Pwropt 34-201] Structural ODC has moved 0 WE to EN ports
+Number of BRAM Ports augmented: 0 newly gated: 2 Total Ports: 4
+Ending PowerOpt Patch Enables Task | Checksum: 165b60077
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 1020.504 ; gain = 0.000
+Ending Power Optimization Task | Checksum: 165b60077
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.761 . Memory (MB): peak = 1020.504 ; gain = 62.789
+INFO: [Common 17-83] Releasing license: Implementation
+25 Infos, 2 Warnings, 1 Critical Warnings and 0 Errors encountered.
+opt_design completed successfully
+opt_design: Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1020.504 ; gain = 556.262
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.034 . Memory (MB): peak = 1020.504 ; gain = 0.000
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Coretcl 2-168] The results of DRC are in file C:/Users/alejandroe/Desktop/project_1/project_1/project_1.runs/impl_1/top_drc_opted.rpt.
+INFO: [Vivado_Tcl 4-424] Cannot write hardware definition file as there are no IPI block design hardware handoff files present
+Command: place_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a100t'
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+Running DRC as a precondition to command place_design
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+Starting Placer Task
+INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 2 CPUs
+
+Phase 1 Placer Initialization
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1020.504 ; gain = 0.000
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1020.504 ; gain = 0.000
+
+Phase 1.1 IO Placement/ Clock Placement/ Build Placer Device
+
+Phase 1.1.1 Pre-Place Cells
+Phase 1.1.1 Pre-Place Cells | Checksum: 3ae8032d
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.120 . Memory (MB): peak = 1020.504 ; gain = 0.000
+WARNING: [Place 30-87] Partially locked IO Bus is found. Following components of the IO Bus dataIn are not locked:  'dataIn[31]'  'dataIn[30]'  'dataIn[29]'  'dataIn[28]'  'dataIn[27]'  'dataIn[26]'  'dataIn[25]'  'dataIn[24]'  'dataIn[23]'  'dataIn[22]'  'dataIn[21]'  'dataIn[20]'  'dataIn[19]'  'dataIn[18]'  'dataIn[17]'  'dataIn[16]'  'dataIn[15]'  'dataIn[14]'  'dataIn[13]'  'dataIn[12]'  'dataIn[11]'  'dataIn[10]'  'dataIn[9]'  'dataIn[8]'  'dataIn[7]'  'dataIn[6]'  'dataIn[5]'  'dataIn[4]'  'dataIn[3]' 
+WARNING: [Place 30-87] Partially locked IO Bus is found. Following components of the IO Bus dataOut are not locked:  'dataOut[31]'  'dataOut[30]'  'dataOut[29]'  'dataOut[28]'  'dataOut[27]'  'dataOut[26]'  'dataOut[25]'  'dataOut[24]'  'dataOut[23]'  'dataOut[22]'  'dataOut[21]'  'dataOut[20]'  'dataOut[19]'  'dataOut[18]'  'dataOut[17]'  'dataOut[16]'  'dataOut[15]'  'dataOut[14]'  'dataOut[13]'  'dataOut[12]'  'dataOut[11]' 
+WARNING: [Place 30-12] An IO Bus dataIn with more than one IO standard is found. Components associated with this bus are: 
+	dataIn[31] of IOStandard LVCMOS18
+	dataIn[30] of IOStandard LVCMOS18
+	dataIn[29] of IOStandard LVCMOS18
+	dataIn[28] of IOStandard LVCMOS18
+	dataIn[27] of IOStandard LVCMOS18
+	dataIn[26] of IOStandard LVCMOS18
+	dataIn[25] of IOStandard LVCMOS18
+	dataIn[24] of IOStandard LVCMOS18
+	dataIn[23] of IOStandard LVCMOS18
+	dataIn[22] of IOStandard LVCMOS18
+	dataIn[21] of IOStandard LVCMOS18
+	dataIn[20] of IOStandard LVCMOS18
+	dataIn[19] of IOStandard LVCMOS18
+	dataIn[18] of IOStandard LVCMOS18
+	dataIn[17] of IOStandard LVCMOS18
+	dataIn[16] of IOStandard LVCMOS18
+	dataIn[15] of IOStandard LVCMOS18
+	dataIn[14] of IOStandard LVCMOS18
+	dataIn[13] of IOStandard LVCMOS18
+	dataIn[12] of IOStandard LVCMOS18
+	dataIn[11] of IOStandard LVCMOS18
+	dataIn[10] of IOStandard LVCMOS18
+	dataIn[9] of IOStandard LVCMOS18
+	dataIn[8] of IOStandard LVCMOS18
+	dataIn[7] of IOStandard LVCMOS18
+	dataIn[6] of IOStandard LVCMOS18
+	dataIn[5] of IOStandard LVCMOS18
+	dataIn[4] of IOStandard LVCMOS18
+	dataIn[3] of IOStandard LVCMOS18
+	dataIn[2] of IOStandard LVCMOS33
+	dataIn[1] of IOStandard LVCMOS33
+	dataIn[0] of IOStandard LVCMOS33
+WARNING: [Place 30-12] An IO Bus dataOut with more than one IO standard is found. Components associated with this bus are: 
+	dataOut[31] of IOStandard LVCMOS18
+	dataOut[30] of IOStandard LVCMOS18
+	dataOut[29] of IOStandard LVCMOS18
+	dataOut[28] of IOStandard LVCMOS18
+	dataOut[27] of IOStandard LVCMOS18
+	dataOut[26] of IOStandard LVCMOS18
+	dataOut[25] of IOStandard LVCMOS18
+	dataOut[24] of IOStandard LVCMOS18
+	dataOut[23] of IOStandard LVCMOS18
+	dataOut[22] of IOStandard LVCMOS18
+	dataOut[21] of IOStandard LVCMOS18
+	dataOut[20] of IOStandard LVCMOS18
+	dataOut[19] of IOStandard LVCMOS18
+	dataOut[18] of IOStandard LVCMOS18
+	dataOut[17] of IOStandard LVCMOS18
+	dataOut[16] of IOStandard LVCMOS18
+	dataOut[15] of IOStandard LVCMOS18
+	dataOut[14] of IOStandard LVCMOS18
+	dataOut[13] of IOStandard LVCMOS18
+	dataOut[12] of IOStandard LVCMOS18
+	dataOut[11] of IOStandard LVCMOS18
+	dataOut[10] of IOStandard LVCMOS33
+	dataOut[9] of IOStandard LVCMOS33
+	dataOut[8] of IOStandard LVCMOS33
+	dataOut[7] of IOStandard LVCMOS33
+	dataOut[6] of IOStandard LVCMOS33
+	dataOut[5] of IOStandard LVCMOS33
+	dataOut[4] of IOStandard LVCMOS33
+	dataOut[3] of IOStandard LVCMOS33
+	dataOut[2] of IOStandard LVCMOS33
+	dataOut[1] of IOStandard LVCMOS33
+	dataOut[0] of IOStandard LVCMOS33
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+
+Phase 1.1.2 IO and Clk Clean Up
+Phase 1.1.2 IO and Clk Clean Up | Checksum: 3ae8032d
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.880 . Memory (MB): peak = 1020.504 ; gain = 0.000
+
+Phase 1.1.3 Implementation Feasibility check On IDelay
+Phase 1.1.3 Implementation Feasibility check On IDelay | Checksum: 3ae8032d
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.882 . Memory (MB): peak = 1020.504 ; gain = 0.000
+
+Phase 1.1.4 Commit IO Placement
+Phase 1.1.4 Commit IO Placement | Checksum: c4eac28d
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.884 . Memory (MB): peak = 1020.504 ; gain = 0.000
+Phase 1.1 IO Placement/ Clock Placement/ Build Placer Device | Checksum: 12c83624a
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.885 . Memory (MB): peak = 1020.504 ; gain = 0.000
+
+Phase 1.2 Build Placer Netlist Model
+
+Phase 1.2.1 Place Init Design
+Phase 1.2.1 Place Init Design | Checksum: 1539d5e82
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.928 . Memory (MB): peak = 1020.504 ; gain = 0.000
+Phase 1.2 Build Placer Netlist Model | Checksum: 1539d5e82
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.929 . Memory (MB): peak = 1020.504 ; gain = 0.000
+
+Phase 1.3 Constrain Clocks/Macros
+
+Phase 1.3.1 Constrain Global/Regional Clocks
+Phase 1.3.1 Constrain Global/Regional Clocks | Checksum: 1539d5e82
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.933 . Memory (MB): peak = 1020.504 ; gain = 0.000
+Phase 1.3 Constrain Clocks/Macros | Checksum: 1539d5e82
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.934 . Memory (MB): peak = 1020.504 ; gain = 0.000
+Phase 1 Placer Initialization | Checksum: 1539d5e82
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.935 . Memory (MB): peak = 1020.504 ; gain = 0.000
+
+Phase 2 Global Placement
+Phase 2 Global Placement | Checksum: 1b8baadc3
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 1020.504 ; gain = 0.000
+
+Phase 3 Detail Placement
+
+Phase 3.1 Commit Multi Column Macros
+Phase 3.1 Commit Multi Column Macros | Checksum: 1b8baadc3
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 1020.504 ; gain = 0.000
+
+Phase 3.2 Commit Most Macros & LUTRAMs
+Phase 3.2 Commit Most Macros & LUTRAMs | Checksum: be06cb7a
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1020.504 ; gain = 0.000
+
+Phase 3.3 Area Swap Optimization
+Phase 3.3 Area Swap Optimization | Checksum: 9db6193f
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1020.504 ; gain = 0.000
+
+Phase 3.4 Small Shape Detail Placement
+
+Phase 3.4.1 Commit Small Macros and Core Logic
+
+Phase 3.4.1.1 Commit Slice Clusters
+Phase 3.4.1.1 Commit Slice Clusters | Checksum: db45a4c4
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 1020.504 ; gain = 0.000
+Phase 3.4.1 Commit Small Macros and Core Logic | Checksum: db45a4c4
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 1020.504 ; gain = 0.000
+
+Phase 3.4.2 Clock Restriction Legalization for Leaf Columns
+Phase 3.4.2 Clock Restriction Legalization for Leaf Columns | Checksum: db45a4c4
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 1020.504 ; gain = 0.000
+
+Phase 3.4.3 Clock Restriction Legalization for Non-Clock Pins
+Phase 3.4.3 Clock Restriction Legalization for Non-Clock Pins | Checksum: db45a4c4
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 1020.504 ; gain = 0.000
+Phase 3.4 Small Shape Detail Placement | Checksum: db45a4c4
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 1020.504 ; gain = 0.000
+
+Phase 3.5 Re-assign LUT pins
+Phase 3.5 Re-assign LUT pins | Checksum: db45a4c4
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 1020.504 ; gain = 0.000
+Phase 3 Detail Placement | Checksum: db45a4c4
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 1020.504 ; gain = 0.000
+
+Phase 4 Post Placement Optimization and Clean-Up
+
+Phase 4.1 Post Commit Optimization
+Phase 4.1 Post Commit Optimization | Checksum: db45a4c4
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 1020.504 ; gain = 0.000
+
+Phase 4.2 Sweep Clock Roots: Post-Placement
+Phase 4.2 Sweep Clock Roots: Post-Placement | Checksum: db45a4c4
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 1020.504 ; gain = 0.000
+
+Phase 4.3 Post Placement Cleanup
+Phase 4.3 Post Placement Cleanup | Checksum: db45a4c4
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 1020.504 ; gain = 0.000
+
+Phase 4.4 Placer Reporting
+Phase 4.4 Placer Reporting | Checksum: db45a4c4
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 1020.504 ; gain = 0.000
+
+Phase 4.5 Final Placement Cleanup
+Phase 4.5 Final Placement Cleanup | Checksum: c53a8860
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 1020.504 ; gain = 0.000
+Phase 4 Post Placement Optimization and Clean-Up | Checksum: c53a8860
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 1020.504 ; gain = 0.000
+Ending Placer Task | Checksum: 65588251
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 1020.504 ; gain = 0.000
+INFO: [Common 17-83] Releasing license: Implementation
+40 Infos, 6 Warnings, 1 Critical Warnings and 0 Errors encountered.
+place_design completed successfully
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.126 . Memory (MB): peak = 1020.504 ; gain = 0.000
+report_io: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.036 . Memory (MB): peak = 1020.504 ; gain = 0.000
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.022 . Memory (MB): peak = 1020.504 ; gain = 0.000
+report_control_sets: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1020.504 ; gain = 0.000
+Command: route_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a100t'
+Running DRC as a precondition to command route_design
+INFO: [DRC 23-27] Running DRC with 2 threads
+WARNING: [DRC 23-20] Rule violation (PLIO-3) Placement Constraints Check for IO constraints - Partially locked IO Bus is found. Following components of the IO Bus dataIn[31:0] are not locked:  dataIn[31] dataIn[30] dataIn[29] dataIn[28] dataIn[27] dataIn[26] dataIn[25] dataIn[24] dataIn[23] dataIn[22] dataIn[21] dataIn[20] dataIn[19] dataIn[18] dataIn[17] dataIn[16] dataIn[15] dataIn[14] dataIn[13] dataIn[12] dataIn[11] dataIn[10] dataIn[9] dataIn[8] dataIn[7] dataIn[6] dataIn[5] dataIn[4] dataIn[3]
+WARNING: [DRC 23-20] Rule violation (PLIO-3) Placement Constraints Check for IO constraints - Partially locked IO Bus is found. Following components of the IO Bus dataOut[31:0] are not locked:  dataOut[31] dataOut[30] dataOut[29] dataOut[28] dataOut[27] dataOut[26] dataOut[25] dataOut[24] dataOut[23] dataOut[22] dataOut[21] dataOut[20] dataOut[19] dataOut[18] dataOut[17] dataOut[16] dataOut[15] dataOut[14] dataOut[13] dataOut[12] dataOut[11]
+WARNING: [DRC 23-20] Rule violation (PLIO-7) Placement Constraints Check for IO constraints - An IO Bus dataIn[31:0] with more than one IO standard is found. Components associated with this bus are: LVCMOS18 (dataIn[31], dataIn[30], dataIn[29], dataIn[28], dataIn[27], dataIn[26], dataIn[25], dataIn[24], dataIn[23], dataIn[22], dataIn[21], dataIn[20], dataIn[19], dataIn[18], dataIn[17] (the first 15 of 29 listed)); LVCMOS33 (dataIn[2], dataIn[1], dataIn[0]); 
+WARNING: [DRC 23-20] Rule violation (PLIO-7) Placement Constraints Check for IO constraints - An IO Bus dataOut[31:0] with more than one IO standard is found. Components associated with this bus are: LVCMOS18 (dataOut[31], dataOut[30], dataOut[29], dataOut[28], dataOut[27], dataOut[26], dataOut[25], dataOut[24], dataOut[23], dataOut[22], dataOut[21], dataOut[20], dataOut[19], dataOut[18], dataOut[17] (the first 15 of 21 listed)); LVCMOS33 (dataOut[10], dataOut[9], dataOut[8], dataOut[7], dataOut[6], dataOut[5], dataOut[4], dataOut[3], dataOut[2], dataOut[1], dataOut[0]); 
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors, 4 Warnings
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+
+Starting Routing Task
+INFO: [Route 35-254] Multithreading enabled for route_design using a maximum of 2 CPUs
+Checksum: PlaceDB: 13cafef8 ConstDB: 0 ShapeSum: 518d8359 RouteDB: 0
+
+Phase 1 Build RT Design
+Phase 1 Build RT Design | Checksum: 75b82af4
+
+Time (s): cpu = 00:00:30 ; elapsed = 00:00:27 . Memory (MB): peak = 1104.215 ; gain = 83.711
+
+Phase 2 Router Initialization
+INFO: [Route 35-64] No timing constraints were detected. The router will operate in resource-optimization mode.
+
+Phase 2.1 Pre Route Cleanup
+Phase 2.1 Pre Route Cleanup | Checksum: 75b82af4
+
+Time (s): cpu = 00:00:30 ; elapsed = 00:00:27 . Memory (MB): peak = 1108.250 ; gain = 87.746
+ Number of Nodes with overlaps = 0
+Phase 2 Router Initialization | Checksum: e2887dce
+
+Time (s): cpu = 00:00:30 ; elapsed = 00:00:27 . Memory (MB): peak = 1113.578 ; gain = 93.074
+
+Phase 3 Initial Routing
+Phase 3 Initial Routing | Checksum: 96fd55be
+
+Time (s): cpu = 00:00:30 ; elapsed = 00:00:27 . Memory (MB): peak = 1113.578 ; gain = 93.074
+
+Phase 4 Rip-up And Reroute
+
+Phase 4.1 Global Iteration 0
+ Number of Nodes with overlaps = 132
+ Number of Nodes with overlaps = 0
+Phase 4.1 Global Iteration 0 | Checksum: 1e111f1fe
+
+Time (s): cpu = 00:00:31 ; elapsed = 00:00:28 . Memory (MB): peak = 1113.578 ; gain = 93.074
+Phase 4 Rip-up And Reroute | Checksum: 1e111f1fe
+
+Time (s): cpu = 00:00:31 ; elapsed = 00:00:28 . Memory (MB): peak = 1113.578 ; gain = 93.074
+
+Phase 5 Delay and Skew Optimization
+Phase 5 Delay and Skew Optimization | Checksum: 1e111f1fe
+
+Time (s): cpu = 00:00:31 ; elapsed = 00:00:28 . Memory (MB): peak = 1113.578 ; gain = 93.074
+
+Phase 6 Post Hold Fix
+Phase 6 Post Hold Fix | Checksum: 1e111f1fe
+
+Time (s): cpu = 00:00:31 ; elapsed = 00:00:28 . Memory (MB): peak = 1113.578 ; gain = 93.074
+
+Phase 7 Route finalize
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 0.137137 %
+  Global Horizontal Routing Utilization  = 0.205385 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 0
+  Number of Unrouted Nets             = 0
+  Number of Partially Routed Nets     = 0
+  Number of Node Overlaps             = 0
+
+Congestion Report
+North Dir 1x1 Area, Max Cong = 27.027%, No Congested Regions.
+South Dir 1x1 Area, Max Cong = 28.8288%, No Congested Regions.
+East Dir 1x1 Area, Max Cong = 36.7647%, No Congested Regions.
+West Dir 1x1 Area, Max Cong = 32.3529%, No Congested Regions.
+Phase 7 Route finalize | Checksum: 1e111f1fe
+
+Time (s): cpu = 00:00:31 ; elapsed = 00:00:28 . Memory (MB): peak = 1113.578 ; gain = 93.074
+
+Phase 8 Verifying routed nets
+
+ Verification completed successfully
+Phase 8 Verifying routed nets | Checksum: 1e111f1fe
+
+Time (s): cpu = 00:00:31 ; elapsed = 00:00:28 . Memory (MB): peak = 1114.152 ; gain = 93.648
+
+Phase 9 Depositing Routes
+Phase 9 Depositing Routes | Checksum: 16266f08c
+
+Time (s): cpu = 00:00:31 ; elapsed = 00:00:28 . Memory (MB): peak = 1114.152 ; gain = 93.648
+INFO: [Route 35-16] Router Completed Successfully
+
+Time (s): cpu = 00:00:31 ; elapsed = 00:00:28 . Memory (MB): peak = 1114.152 ; gain = 93.648
+
+Routing Is Done.
+INFO: [Common 17-83] Releasing license: Implementation
+48 Infos, 10 Warnings, 1 Critical Warnings and 0 Errors encountered.
+route_design completed successfully
+route_design: Time (s): cpu = 00:00:32 ; elapsed = 00:00:28 . Memory (MB): peak = 1114.152 ; gain = 93.648
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.118 . Memory (MB): peak = 1114.152 ; gain = 0.000
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Coretcl 2-168] The results of DRC are in file C:/Users/alejandroe/Desktop/project_1/project_1/project_1.runs/impl_1/top_drc_routed.rpt.
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+WARNING: [Timing 38-313] There are no user specified timing constraints. Timing constraints are needed for proper timing analysis.
+WARNING: [Power 33-232] No user defined clocks were found in the design!
+Resolution: Please specify clocks using create_clock/create_generated_clock for sequential elements. For pure combinatorial circuits, please specify a virtual clock, otherwise the vectorless estimation might be inaccurate
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a100t'
+Running DRC as a precondition to command write_bitstream
+INFO: [DRC 23-27] Running DRC with 2 threads
+ERROR: [DRC 23-20] Rule violation (NSTD-1) Unspecified I/O Standard - 23 out of 37 logical ports use I/O standard (IOSTANDARD) value 'DEFAULT', instead of a user assigned specific value. This may cause I/O contention or incompatibility with the board power or connectivity affecting performance, signal integrity or in extreme cases cause damage to the device or the components to which it is connected. To correct this violation, specify all I/O standards. This design will fail to generate a bitstream unless all logical ports have a user specified I/O standard value defined. To allow bitstream creation with unspecified I/O standard values (not recommended), use this command: set_property SEVERITY {Warning} [get_drc_checks NSTD-1].  NOTE: When using the Vivado Runs infrastructure (e.g. launch_runs Tcl command), add this command to a .tcl file and add that file as a pre-hook for write_bitstream step for the implementation run. Problem ports: dataIn[3], dataOut[31], dataOut[30], dataOut[29], dataOut[28], dataOut[27], dataOut[26], dataOut[25], dataOut[24], dataOut[23], dataOut[22], dataOut[21], dataOut[20], dataOut[19], dataOut[18] (the first 15 of 23 listed).
+ERROR: [DRC 23-20] Rule violation (UCIO-1) Unconstrained Logical Port - 23 out of 37 logical ports have no user assigned specific location constraint (LOC). This may cause I/O contention or incompatibility with the board power or connectivity affecting performance, signal integrity or in extreme cases cause damage to the device or the components to which it is connected. To correct this violation, specify all pin locations. This design will fail to generate a bitstream unless all logical ports have a user specified site LOC constraint defined.  To allow bitstream creation with unspecified pin locations (not recommended), use this command: set_property SEVERITY {Warning} [get_drc_checks UCIO-1].  NOTE: When using the Vivado Runs infrastructure (e.g. launch_runs Tcl command), add this command to a .tcl file and add that file as a pre-hook for write_bitstream step for the implementation run.  Problem ports: dataIn[3], dataOut[31], dataOut[30], dataOut[29], dataOut[28], dataOut[27], dataOut[26], dataOut[25], dataOut[24], dataOut[23], dataOut[22], dataOut[21], dataOut[20], dataOut[19], dataOut[18] (the first 15 of 23 listed).
+WARNING: [DRC 23-20] Rule violation (CFGBVS-1) Missing CFGBVS and CONFIG_VOLTAGE Design Properties - Neither the CFGBVS nor CONFIG_VOLTAGE voltage property is set in the current_design.  Configuration bank voltage select (CFGBVS) must be set to VCCO or GND, and CONFIG_VOLTAGE must be set to the correct configuration voltage, in order to determine the I/O voltage support for the pins in bank 0.  It is suggested to specify these either using the 'Edit Device Properties' function in the GUI or directly in the XDC file using the following syntax:
+
+ set_property CFGBVS value1 [current_design]
+ #where value1 is either VCCO or GND
+
+ set_property CONFIG_VOLTAGE value2 [current_design]
+ #where value2 is the voltage provided to configuration bank 0
+
+Refer to the device configuration user guide for more information.
+INFO: [Vivado 12-3199] DRC finished with 2 Errors, 1 Warnings
+INFO: [Vivado 12-3200] Please refer to the DRC report (report_drc) for more information.
+ERROR: [Vivado 12-1345] Error(s) found during DRC. Bitgen not run.
+INFO: [Common 17-83] Releasing license: Implementation
+ERROR: [Common 17-39] 'write_bitstream' failed due to earlier errors.
+
+INFO: [Common 17-206] Exiting Vivado at Mon Apr 29 15:48:25 2019...
